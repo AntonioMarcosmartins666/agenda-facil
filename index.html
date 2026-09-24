@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Agenda Fácil" />
+    <title>Agenda Fácil</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; color: #14212a; }
+      #file-launcher { display: none; min-height: 100vh; box-sizing: border-box; padding: 24px; align-items: center; justify-content: center; background: #f5f7fb; text-align: center; }
+      #file-launcher section { max-width: 480px; padding: 36px; border: 1px solid #dce2eb; border-radius: 18px; background: white; }
+      #file-launcher a { display: inline-block; margin-top: 16px; padding: 13px 22px; border-radius: 10px; background: #4f46e5; color: white; font-weight: 700; text-decoration: none; }
+      #file-launcher a:focus-visible { outline: 3px solid #14212a; outline-offset: 3px; }
+    </style>
+  </head>
+  <body>
+    <div id="file-launcher">
+      <section>
+        <h1>Agenda Fácil</h1>
+        <p>Você abriu o arquivo local. Use o botão abaixo para acessar o aplicativo online.</p>
+        <a href="https://agenda-facil-black.vercel.app/">Abrir Agenda Fácil</a>
+      </section>
+    </div>
+    <div id="root"></div>
+    <script>
+      if (window.location.protocol === 'file:') {
+        document.getElementById('file-launcher').style.display = 'flex';
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
