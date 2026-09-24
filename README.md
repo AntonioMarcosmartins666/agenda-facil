@@ -1,5 +1,7 @@
 # 📅 Agenda Fácil
 
+![Agenda Fácil](./ChatGPT%20Image%2023%20de%20set.%20de%202026%2C%2023_22_53.png)
+
 ## Plataforma de Gestão de Agendamentos
 
 O **Agenda Fácil** é uma aplicação web desenvolvida para facilitar o gerenciamento de agendamentos, clientes e serviços em um único lugar.
